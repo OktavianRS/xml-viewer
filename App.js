@@ -14,7 +14,7 @@ export default class App extends React.Component {
         <Router>
           <Scene key="root">
             <Scene key="diagramsList" component={DiagramsList} title="List of diagrams" />
-            <Scene key="diagramView" component={DiagramView} title="" hideNavBar />
+            <Scene key="diagramView" component={DiagramView} title="" />
           </Scene>
         </Router>
       </Container>

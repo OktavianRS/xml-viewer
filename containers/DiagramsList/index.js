@@ -15,18 +15,17 @@ export default class DiagramsList extends React.Component {
     }
 
     fetchDiagramsList = () => {
-        // return axios.get('http://192.168.1.36:8000/resources/Human%20Resources%20(HR)/?format=json')
-        //     .then(response => {
-        //         this.setState({
-        //             dataList: response.data,
-        //         })
-        //     })
-        //     .catch(error => console.error(error));
-        // console.log(response);
-        // return response;
+        return axios.get('http://0.0.0.0:8000/resources/Human%20Resources%20(HR)/?format=json')
+            .then(response => {
+                this.setState({
+                    dataList: response.data,
+                })
+            })
+            .catch(error => console.error(error));
     }
 
     render() {
+        console.log(this.state.dataList);
         return (
             <Container>
                 <Header />
